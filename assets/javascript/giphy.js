@@ -3,8 +3,9 @@ $(document).ready(function () {
 var topics = ["Fellowship of the Ring", "The Two Towers", "Return of the King", "Miss Peregrine's Home for Peculiar Children", "Black Panther", "Captain Marvel", "Alice in Wonderland"];
 
 $(document).on("click", ".gif-btn", function() {
+    var rating = "";
     var searchParam = $(this).attr("data-movie");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchParam + "api_key=4WkQFmyOYQVAFTiG3oCIImwuhOKOHRVa&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchParam + "&api_key=4WkQFmyOYQVAFTiG3oCIImwuhOKOHRVa&limit=10" + "&offset=0&rating=" + rating;
     $.ajax({
       url: queryURL,
       method: "GET"
@@ -13,7 +14,11 @@ $(document).on("click", ".gif-btn", function() {
     for (var i = 0; i < results.length; i++) {
         var gifDiv = $("<div>");
         var p = $("<p>").text("Rating: " + results[i].rating);
+        var gifImage = $("<img>");
+        gifImage.attr("src", results[i].images.url);
         gifDiv.append(p);
+        gifDiv.append(gifImage);
+        $("#gif-placement").prepend(gifDiv);
         }
     });
   });
