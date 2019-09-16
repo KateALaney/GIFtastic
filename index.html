@@ -5,26 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GIPHY App</title>
+    <title>GIFtastic</title>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="jumbotron">
-        <h1 class="display-4">Book GIFs</h1>
+        <h1>GIFtastic</h1>
     </div>
-    
+
     <div class="container">
         <div class="row">
+            <div class="col-md-12" id="array-buttons"></div>
+        </div>
+        <div class="row top-buffer">
+            <div class="col-md-4">
+                <form>
+                    <div class="form">
+                        <label for="gif-input">Add another!</label>
+                        <input type="text" class="form-control" id="gif-input-form">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row top-buffer">
             <div class="col-md-12">
+                <button type="submit" class="btn btn-light" id="create-gif">Generate New GIF</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
                 <div id="gif-placement"></div>
+            </div>
+            <div class="col-md-6">
+                <div id="gif-rating"></div>
             </div>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="assets/javascript/giphy.js"></script>
+
 </body>
 
 </html>

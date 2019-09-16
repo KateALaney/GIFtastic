@@ -6,9 +6,26 @@ h1 {
     font-family: "Shadows Into Light", cursive;
     color: black;
     text-align: center;
+    font-size: 72px;
 }
 
 .jumbotron {
     background-color: black;
     background-image: url(../images/snowGIF.gif);
+}
+
+.btn-light {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 24px;
+    float: left;
+    border: 1px solid black;
+}
+
+.top-buffer {
+    margin-top: 20px;
+}
+
+.form {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 24px;
 }
