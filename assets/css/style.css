@@ -1,0 +1,14 @@
+body {
+    background-image: url(../images/snowGIF.gif);
+}
+
+h1 {
+    font-family: "Shadows Into Light", cursive;
+    color: black;
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: black;
+    background-image: url(../images/snowGIF.gif);
+}
