@@ -13,7 +13,7 @@ h1 {
     color: white;
 }
 
-.jumbotron {
+.jumbotron-fluid {
     background-color: black;
     background-image: url(../images/darkSnowGIF.gif);
     color: white;
