@@ -1,17 +1,22 @@
 body {
-    background-image: url(../images/snowGIF.gif);
+    background-color: black;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 24px;
+    color: white;
 }
 
 h1 {
     font-family: "Shadows Into Light", cursive;
     color: black;
     text-align: center;
-    font-size: 72px;
+    font-size: 100px;
+    color: white;
 }
 
 .jumbotron {
     background-color: black;
-    background-image: url(../images/snowGIF.gif);
+    background-image: url(../images/darkSnowGIF.gif);
+    color: white;
 }
 
 .btn-light {
